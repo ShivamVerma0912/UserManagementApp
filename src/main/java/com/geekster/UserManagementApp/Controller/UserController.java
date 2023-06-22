@@ -31,7 +31,7 @@ public class UserController {
 
     @PutMapping(value = "/user/{userId}/{name}")
     public String updateUser(@PathVariable String userId,@PathVariable String name){
-        return userService.updateUserById(userId,name)? "Updated successfully":"Not found user with this id..!!";
+        return userService.updateUserById(userId,name)? "Updated successfully":"Not found user with this Id..!!";
     }
     @DeleteMapping(value = "/user/{userId}")
     public String deleteUserByUserId(@PathVariable String userId){
